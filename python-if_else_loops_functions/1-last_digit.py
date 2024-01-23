@@ -9,3 +9,4 @@ elif lastdigit == 0:
     print(f"{str1} and is 0")
 else:
     print(f"{str1} and is less than 6 and not 0")
+
