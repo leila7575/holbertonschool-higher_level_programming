@@ -14,9 +14,9 @@ str4 = " and is 0"
 str5 = " and is less than 6 and not 0"
 
 print(f"{str1} {number} {str2} {result}",end = " ")
-if lastdigit > 5:
+if result > 5:
     print(f"{str3}")
-elif lastdigit == 0:
+elif result == 0:
     print(f"{str4}")
 else:
     print(f"{str5}")
