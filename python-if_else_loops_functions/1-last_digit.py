@@ -13,10 +13,9 @@ str3 = " and is greater than 5"
 str4 = " and is 0"
 str5 = " and is less than 6 and not 0"
 
-print(f"{str1} {number} {str2} {result}",end = " ")
 if result > 5:
-    print(f"{str3}")
+    print(f"Last digit of {number} is {result} and is greater than 5")
 elif result == 0:
-    print(f"{str4}")
+    print(f"Last digit of {number} is {result} and is 0")
 else:
-    print(f"{str5}")
+    print(f"Last digit of {number} is {result} and is less than 6 and not 0")
