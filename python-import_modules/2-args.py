@@ -10,7 +10,6 @@ if __name__ == "__main__":
         print(f"{number_arg} argument:")
     else:
         print(f"{number_arg} arguments:")
-    
     if number_arg:
         for i, arg in enumerate(args_list, 1):
             print(f"{i}: {arg}")
