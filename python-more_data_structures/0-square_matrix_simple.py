@@ -1,7 +1,10 @@
 #!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
-    response = []
+    squares_matrix = []
     for row in matrix:
-        sub_matrix = map(lambda num: num**2, row)
-        response.append(list(sub_matrix))
-    return response
+        row_squares = []
+        for number in row:
+            row_squares.append(number**2)
+        squares_matrix.append(row_squares)
+    return squares_matrix
+
