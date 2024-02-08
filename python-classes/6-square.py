@@ -1,9 +1,16 @@
 #!/usr/bin/python3
+"""
+This module contains the class Square.
+"""
+
+
 class Square():
     """This class defines a square class with size and position attributes."""
 
     def __init__(self, size=0, position=(0, 0)):
-        """Initialisation of the attributes of the class, initializes square with size and position.
+        """
+        Initialisation of the attributes of the class
+        initializes square with size and position.
 
         Args:
             size(int): private instance attribute, size of the square.
@@ -55,7 +62,7 @@ class Square():
             raise TypeError("position must be a tuple of 2 positive integers")
         else:
             self.__position = value
-    
+
     def area(self):
         """Returns square area based on size.
 
@@ -65,7 +72,10 @@ class Square():
         return int(self.__size) ** 2
 
     def my_print(self):
-        """prints in stdout the square with the character # based on size and position."""
+        """
+        prints in stdout the square with the character #
+        based on size and position.
+        """
         if self.__size == 0:
             print()
         else:
