@@ -1,9 +1,16 @@
 #!/usr/bin/python3
+"""
+This module contains the class Square.
+"""
+
+
 class Square():
     """This class defines a square class with size and position attributes."""
 
     def __init__(self, size=0):
-        """Initialisation of the attributes of the class, initializes square with size and position.
+        """
+        Initialisation of the attributes of the class,
+        initializes square with size and position.
 
         Args:
             size(int): private instance attribute, size of the square.
@@ -12,8 +19,8 @@ class Square():
 
     @property
     def size(self):
-         """Retrieves size of square."""
-         return self.__size
+        """Retrieves size of square. """
+        return self.__size
 
     @size.setter
     def size(self, value):
@@ -42,8 +49,9 @@ class Square():
         return int(self.__size) ** 2
 
     def my_print(self):
-        """prints in stdout the square with the character # based on size."""
-    
+        """
+        prints in stdout the square with the character # based on size.
+        """
         if self.__size == 0:
             print()
         else:
