@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+"""
+This module contains the class Square.
+"""
+
+
 class Square():
     """This class defines a square.
     """
@@ -19,7 +24,7 @@ class Square():
             raise ValueError("size must be >= 0")
         else:
             self.__size = size
-    
+
     def area(self):
         """Returns square area based on size.
 
