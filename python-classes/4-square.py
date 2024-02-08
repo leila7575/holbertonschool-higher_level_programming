@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+"""
+This module contains the class Square.
+"""
+
+
 class Square():
     """This class defines a square, with size and position attribute."""
     def __init__(self, size=0):
@@ -8,6 +13,7 @@ class Square():
             size(int): private instance attribute, size of the square.
         """
         self.size = size
+
     @property
     def size(self):
         """Retrieves size of square."""
