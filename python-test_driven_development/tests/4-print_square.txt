@@ -1,0 +1,28 @@
+"""
+This module contains doctests for the function print_square.
+"""
+
+# Importing function print_square:
+>>> print_square = __import__('4-print_square').print_square
+
+# Test case 1: Printing a square with size(4)
+>>> print_square(4)
+####
+####
+####
+####
+
+# Test case 2: Printing empty square
+>>> print_square(0)
+
+# Test case 3: size is less than 0 ValueError
+>>> print_square(-3)
+Traceback (most recent call last):
+    ...
+ValueError: size must be >= 0
+
+# Test case 4: size is float TypeError
+>>> print_square(7.8)
+Traceback (most recent call last):
+    ...
+TypeError: size must be an integer
