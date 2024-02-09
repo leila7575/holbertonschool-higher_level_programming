@@ -1,0 +1,23 @@
+# Importing function add_integer:
+>>> add_integer = __import__('0-add_integer').add_integer
+
+# Test cases:
+>>> add_integer(5)
+103
+>>> add_integer(-5)
+93
+>>> add_integer(5, 8)
+13
+>>> add_integer(53.5)
+151
+>>> add_integer(-53.5)
+45
+>>> add_integer(54.7, 76.8)
+130
+>>> add_integer(54.7, -76.8)
+-22
+>>> add_integer(-54.7, -76.8)
+-130
+>>> add_integer(5, 76.8)
+81
+
