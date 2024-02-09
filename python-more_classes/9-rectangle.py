@@ -28,6 +28,11 @@ class Rectangle():
         Rectangle.number_of_instances += 1
 
     @property
+    def width(self):
+        """Retrieves width of rectangle."""
+        return self.__width
+
+    @property
     def height(self):
         """Retrieves height of rectangle."""
         return self.__height
@@ -93,7 +98,8 @@ class Rectangle():
             return 2 * (self.__height + self.__width)
 
     def __str__(self):
-        """Returns string representation of the rectangle.
+        def __str__(self):
+            """Returns string representation of the rectangle.
 
         Returns:
             String representation of rectangle
@@ -119,18 +125,8 @@ class Rectangle():
         print("Bye rectangle...")
         Rectangle.number_of_instances -= 1
 
-    @staticmethod
     def bigger_or_equal(rect_1, rect_2):
         """Returns the biggest rectangle based on the area.
-
-        Args:
-            rect_1: first rectangle.
-            rect_2: second rectangle
-
-        Raises:
-            TypeError: rect_1 must be an instance of Rectangle
-            TypeError: rect_2 must be an instance of Rectangle
-
         """
         if not isinstance(rect_1, Rectangle):
             raise TypeError("rect_1 must be an instance of Rectangle")
