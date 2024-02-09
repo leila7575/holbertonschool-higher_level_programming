@@ -23,7 +23,7 @@ class Rectangle():
 
     @property
     def width(self):
-        """Retrieves width of square."""
+        """Retrieves width of rectangle."""
         return self.__width
 
     @property
@@ -51,15 +51,15 @@ class Rectangle():
 
     @property
     def width(self):
-        """Retrieves width of square."""
+        """Retrieves width of rectangle."""
         return self.__width
 
     @width.setter
     def width(self, value):
-        """Sets width of square.
+        """Sets width of rectangle.
 
         Args:
-            value(int): width of square.
+            value(int): width of rectangle.
 
         Raises:
             TypeError: width must be an integer.
