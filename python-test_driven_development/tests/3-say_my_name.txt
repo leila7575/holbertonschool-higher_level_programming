@@ -1,0 +1,30 @@
+"""
+This module contains doctests for the function say_my_name.
+"""
+
+# Importing function say_my_name:
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+# Test case 1: first and last names are strings
+>>> say_my_name("John", "Smith")
+My name is John Smith
+
+# Test case 2: only first name is provided
+>>> say_my_name("Julie")
+My name is Julie 
+
+# Test case 3: first_name is not a string
+>>> say_my_name(57, "Smith")
+Traceback (most recent call last):
+    ...
+TypeError: first_name must be a string
+
+# Test case 4: last_name is not a string
+>>> say_my_name("John", 57)
+Traceback (most recent call last):
+    ...
+TypeError: last_name must be a string
+
+# Test case 5: Printing name with special characters
+>>> say_my_name("John", "Smith?")
+My name is John Smith?
