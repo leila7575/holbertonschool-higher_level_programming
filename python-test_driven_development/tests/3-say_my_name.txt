@@ -9,9 +9,10 @@ This module contains doctests for the function say_my_name.
 >>> say_my_name("John", "Smith")
 My name is John Smith
 
-# Test case 2: only first name is provided
+
+# Test case 1: only first name is provided
 >>> say_my_name("Julie")
-My name is Julie 
+My name is Julie
 
 # Test case 3: first_name is not a string
 >>> say_my_name(57, "Smith")
