@@ -30,11 +30,6 @@ class Rectangle():
         Rectangle.number_of_instances += 1
 
     @property
-    def width(self):
-        """Retrieves width of rectangle."""
-        return self.__width
-
-    @property
     def height(self):
         """Retrieves height of rectangle."""
         return self.__height
