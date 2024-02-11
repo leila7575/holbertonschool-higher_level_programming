@@ -14,18 +14,10 @@ def text_indentation(text):
     if not isinstance(text, str):
         raise TypeError("text must be a string")
 
-    line = ""
-    for char in text:
-        if char in ".?:":
-            print(line.strip())
-            print()
-            line = ""
-        else:
-            line += char
+    for char in ".?:":
+        text = (char + "\n\n").join([line.strip(" ")for line in text.split(char)])
 
-    if line:
-        print(line.strip())
-
+    print("{}".format(text), end=" ")
 
 if __name__ == "__main__":
     import doctest
