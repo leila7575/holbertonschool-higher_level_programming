@@ -1,15 +1,22 @@
-"""
-This module contains doctests for the function text_indentation.
-"""
+===================================
+''5-text_indentation'' module
+===================================
 
-# Importing function text_indentation:
-text_indentation = __import__('5-text_indentation').text_indentation
+how to use text_indentation
 
-# Test case 1: first example
->>> text_indentation ("Lorem ipsum dolor sit amet, consectetur adipiscing elit.")
+---------------------------
 
-# Test case 2: text is not a string
->>> text_indentation(674)
-Traceback (most recent call last):
-    ...
-TypeError: text must be a string
+Importing function text_indentation:
+	text_indentation = __import__('5-text_indentation').text_indentation
+
+Test case 1: first example
+	>>> text_indentation ("""Lorem ipsum dolor sit amet, consectetur adipiscing elit. \ Quonam modo?""")
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+	<BLANKLINE>
+	Quonam modo?
+	<BLANKLINE>
+
+Test case 2: text is not a string
+	>>> text_indentation(674)
+	Traceback (most recent call last):
+	TypeError: text must be a string
