@@ -18,18 +18,18 @@ class Student():
         Initialisation of the attributes of the class
         initializes Student with first_name, last_name and age.
         """
-        self.first_name = first_name
-        self.last_name = last_name
         self.age = age
+        self.last_name = last_name
+        self.first_name = first_name
 
     def to_json(self, attrs=None):
         """Retrieves dictionary representation of Student instance.
         """
-        if attrs is None:
-            return self.__dict__
-        else:
-            return{
-                    attr: self.__dict__[attr]
+        if (isinstance(attrs, list) and
+                all(isinstance(item, str) for item in attrs)):
+            return {
+                    attr: getattr(self, attr)
                     for attr in attrs
-                    if attr in self.__dict__
+                    if hasattr(self, attr)
             }
+        return self.__dict__
