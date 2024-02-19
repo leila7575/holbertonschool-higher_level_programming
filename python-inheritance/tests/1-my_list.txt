@@ -1,0 +1,39 @@
+The '1-my_list' module
+==========================
+
+Using '1-my_list'
+=====================
+
+Importing function my_list:
+	>>> MyList = __import__('1-my_list').MyList
+
+Test 1: empty list
+	>>> my_list = MyList()
+	>>> my_list.print_sorted()
+	[]
+
+Test 2: Reverse order
+	>>> my_list = MyList()
+	>>> my_list.append(4)
+	>>> my_list.append(3)
+	>>> my_list.append(2)
+	>>> my_list.append(1)
+	>>> my_list.print_sorted()
+	[1, 2, 3, 4]
+	>>> print(my_list)
+	[4, 3, 2, 1]
+
+Test 3:Negative numbers
+	>>> my_list = MyList()
+        >>> my_list.append(-4)
+        >>> my_list.append(-3)
+        >>> my_list.append(-2)
+        >>> my_list.append(-1)
+        >>> my_list.print_sorted()
+        [-4, -3, -2, -1]
+        >>> print(my_list)
+        [-4, -3, -2, -1]
+
+Test 4: Checks if MyList inherits from list:
+	>>> issubclass(MyList, list)
+	True
