@@ -60,7 +60,12 @@ class Rectangle(Base):
     @x.setter
     def x(self, value):
         """sets x of rectangle."""
-        self.__x = value
+        if not isinstance(value, int):
+            raise TypeError("x must be an integer")
+        elif value < 0:
+            raise ValueError("x must be >= 0")
+        else:
+            self.__x = value
 
     @property
     def y(self):
@@ -70,7 +75,12 @@ class Rectangle(Base):
     @y.setter
     def y(self, value):
         """sets y of rectangle."""
-        self.__y = value
+        if not isinstance(value, int):
+            raise TypeError("y must be an integer")
+        elif value < 0:
+            raise ValueError("y must be >= 0")
+        else:
+            self.__y = value
 
     def area(self):
         """Returns rectangle area based on width and height.
@@ -79,8 +89,10 @@ class Rectangle(Base):
 
     def display(self):
         """Prints Rectangle instance with character #."""
-        for i in range(self.__height):
-            print("#" * self.__width)
+        for i in range(self.y):
+            print()
+        for i in range(self.height):
+            print(" " * self.x + "#" * self.width)
 
     def __str__(self):
         """Returns string representation of the rectangle."""
