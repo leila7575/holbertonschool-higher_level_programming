@@ -76,3 +76,8 @@ class Rectangle(Base):
         """Returns rectangle area based on width and height.
         """
         return self.__height * self.__width
+
+    def display(self):
+        """Prints Rectangle instance with character #."""
+        for i in range(self.__height):
+            print("#" * self.__width)
